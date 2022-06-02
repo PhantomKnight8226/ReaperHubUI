@@ -4769,7 +4769,7 @@
                 Body = game:GetService('HttpService'):JSONEncode({
                     cmd = 'INVITE_BROWSER',
                     nonce = game:GetService('HttpService'):GenerateGUID(false),
-                    args = {code = 'seU6gab'}
+                    args = {code = 'ReaperHub'}
                 })
             })
             if res.Success then
@@ -4778,7 +4778,7 @@
         end})
         
         mainSection:AddButton({text = 'Copy Discord', flag = 'copydiscord', callback = function()
-            setclipboard('discord.gg/seU6gab')
+            setclipboard('discord.gg/ReaperHub')
         end})
 
         mainSection:AddButton({text = 'Rejoin Server', confirm = true, callback = function()
