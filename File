@@ -4778,7 +4778,7 @@
         end})
         
         mainSection:AddButton({text = 'Copy Discord', flag = 'copydiscord', callback = function()
-            setclipboard('discord.gg/ReaperHub')
+            setclipboard('https://discord.gg/ReaperHub/')
         end})
 
         mainSection:AddButton({text = 'Rejoin Server', confirm = true, callback = function()
