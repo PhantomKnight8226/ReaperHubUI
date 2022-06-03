@@ -3916,7 +3916,9 @@
                             self.objects.inputText.ThemeColor = 'Option Text 1';
                             c = utility:Connection(inputservice.InputBegan, function(inp)
                                 if inp.KeyCode == Enum.KeyCode.Return or inp.UserInputType == Enum.UserInputType.MouseButton1 then
-                                    box:ReleaseFocus(true);
+                                    input = self.input
+                                    self.objects.inputText.Text = input;
+                                    box:ReleaseFocus();
                                     box.Text = ""
                                 elseif inp.KeyCode == Enum.KeyCode.Escape then
                                     input = self.input
