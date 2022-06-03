@@ -3917,8 +3917,6 @@
                             c = utility:Connection(inputservice.InputBegan, function(inp)
                                 if inp.KeyCode == Enum.KeyCode.Return then
                                     box:ReleaseFocus(true);
-                                    input = self.input
-                                    self.objects.inputText.Text = input;
                                     box:ReleaseFocus();
                                     box.Text = ""
                                 elseif inp.UserInputType == Enum.UserInputType.MouseButton1 then
