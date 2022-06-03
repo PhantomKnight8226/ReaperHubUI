@@ -3976,6 +3976,7 @@
                             if apply then
                                 box:SetInput(input);
                             end
+                            box.Text = ""
                             c:Disconnect();
                         end
 
