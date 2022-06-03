@@ -3874,7 +3874,6 @@
                             utility:Connection(objs.holder.MouseButton1Down, function()
                                 if box.focused then
                                     box:ReleaseFocus();
-                                    box.Text = ""
                                 else
                                     box:CaptureFocus(inputservice:IsKeyDown(Enum.KeyCode.LeftControl));
                                     if inputservice:IsKeyDown(Enum.KeyCode.LeftControl) then
@@ -3910,7 +3909,6 @@
                         local input = box.input;
                         function box:CaptureFocus(clear)
                             box.focused = true
-
                             if clear then
                                 input = '';
                             end
@@ -3923,6 +3921,7 @@
                                     input = self.input
                                     self.objects.inputText.Text = input;
                                     box:ReleaseFocus();
+                                    box.Text = ""
                                 elseif inp.KeyCode == Enum.KeyCode.Backspace then
                                     input = input:sub(1,-2);
                                     self.objects.inputText.Text = input;
