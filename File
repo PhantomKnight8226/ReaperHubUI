@@ -3874,6 +3874,7 @@
                             utility:Connection(objs.holder.MouseButton1Down, function()
                                 if box.focused then
                                     box:ReleaseFocus();
+                                    box.Text = ""
                                 else
                                     box:CaptureFocus(inputservice:IsKeyDown(Enum.KeyCode.LeftControl));
                                     if inputservice:IsKeyDown(Enum.KeyCode.LeftControl) then
